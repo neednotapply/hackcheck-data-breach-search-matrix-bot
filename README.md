@@ -1,14 +1,11 @@
-# HackCheck - Data Breach Search - Discord Bot
+# HackCheck - Data Breach Search - Matrix Bot
 
-HackCheck is a Discord bot that enables users to search for data breaches by various criteria such as email, password, username, and more. This bot utilizes the HackCheck.io API to fetch breach data and presents it interactively within Discord servers.
-
-![1](https://github.com/RocketGod-git/hackcheck-data-breach-search-discord-bot/assets/57732082/d6087251-16f6-4aa3-8ad0-7a554cff0d0a)
-![2](https://github.com/RocketGod-git/hackcheck-data-breach-search-discord-bot/assets/57732082/e6a5fcf5-a913-46c8-a7c5-afd1d2fc3446)
+HackCheck is a Matrix bot that enables users to search for data breaches by various criteria such as email, password, username, and more. This bot utilizes the HackCheck.io API to fetch breach data and presents it interactively within Matrix servers.
 
 ## Features
 
 - Search for breaches by email, password, username, full name, IP address, phone number, and hash.
-- Interactive Discord buttons and modals for seamless user experience.
+- Interactive Matrix buttons and modals for seamless user experience.
 - Detailed logging of bot activity.
 - Output results in both CSV and PDF report formats.
 
@@ -17,7 +14,7 @@ HackCheck is a Discord bot that enables users to search for data breaches by var
 You can download the latest version of the bot from the GitHub repository:
 
 ```bash
-git clone https://github.com/RocketGod-git/hackcheck-data-breach-search-discord-bot.git
+git clone https://github.com/RocketGod-git/hackcheck-data-breach-search-Matrix-bot.git
 ```
 
 ## Installation
@@ -25,23 +22,23 @@ git clone https://github.com/RocketGod-git/hackcheck-data-breach-search-discord-
 Before running the bot, install the necessary Python packages directly using pip:
 
 ```bash
-cd hackcheck-data-breach-search-discord-bot
-pip install discord aiohttp aiolimiter reportlab
+cd hackcheck-data-breach-search-Matrix-bot
+pip install Matrix aiohttp aiolimiter reportlab
 ```
 
 ## Configuration
 
-1. Update the `config.json` file with your Discord bot token and HackCheck API key:
+1. Update the `config.json` file with your Matrix bot token and HackCheck API key:
 
 ```json
 {
-    "discord_bot_token": "YOUR-TOKEN",
+    "Matrix_bot_token": "YOUR-TOKEN",
     "hackcheck_api_key": "YOUR-KEY",
-    "webhook_url": "DISCORD-WEBHOOK-FOR-LOGGING"
+    "webhook_url": "Matrix-WEBHOOK-FOR-LOGGING"
 }
 ```
 
-You'll have to figure out Discord Developer Portal. I'm not teaching these things here.
+You'll have to figure out Matrix Developer Portal. I'm not teaching these things here.
 
 ## Usage
 
@@ -51,7 +48,7 @@ Run the bot:
 python hackcheckbot.py
 ```
 
-The bot will connect to Discord, and you can start using it by invoking the slash command `/hackcheck` in your server.
+The bot will connect to Matrix, and you can start using it by invoking the slash command `/hackcheck` in your server.
 
 ## Contributing
 
